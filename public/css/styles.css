@@ -1,0 +1,267 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.span-title{
+  letter-spacing: 0.2rem;
+  font-size: 150%;
+}
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  /* padding: 0 0 4.5rem; */
+  text-align: center;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title {
+  background-color: #ccffdd;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* --------------------Profile Section-------------------------- */
+.row {
+  padding: 0 0 0 0;
+}
+
+#profile {
+  padding: 3% 25% 7%;
+  background-color: blue;
+}
+
+#inner-profile {
+  padding: 0;
+  background-color: black;
+}
+
+.profile-left-side {
+  background: url("/images/profile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 0 0;
+}
+
+.profile-right-side {
+  text-align: left;
+  /* border-left: thick solid #ff0000; */
+  padding-left: 3%;
+}
+
+.profile-title {}
+
+.profile-description {}
+
+/* --------------------social Section-------------------------- */
+#social {
+  background-color: #f5f5f5;
+}
+
+#social footer {
+  width: 50%;
+  margin: auto;
+  padding: 0;
+  background-color: red;
+}
+
+#social .container-fluid {
+  padding: 0;
+  background-color: #ffddcc;
+}
+
+.icons-anchor-tag{
+  color: white;
+}
+
+/* --------------------About me Section-------------------------- */
+#about {
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+#about .container-fluid{
+  width: 70%;
+  text-align: left;
+}
+#about h3{
+  color: #788fa5;
+}
+
+/* --------------------Experience Section-------------------------- */
+
+#experience-education{
+  text-align: left;
+}
+#experience-education span{
+  letter-spacing: 0.2rem;
+  font-size: 150%;
+}
+#experience-education h3{
+  padding: 1rem 0;
+}
+.education{
+  padding: 2rem 0;
+}
+
+/* --------------------Skills Section-------------------------- */
+
+#skills{
+  background-color: blue;
+  /* padding: 0 0; */
+}
+#skills .container-fluid{
+}
+#skills hr{
+
+}
+
+
+
+/* Features Section */
+#features {
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
