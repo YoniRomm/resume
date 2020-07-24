@@ -1,7 +1,7 @@
 <%- include("header") -%>
 
 <body>
-  <section class="colored-section" id="title">
+  <section class="colored-section sticky" id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -9,15 +9,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav flex-wrap">
             <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
+              <a class="nav-link" href="#profile">PROFILE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Download</a>
+              <a class="nav-link" href="#education">EDUCATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -28,23 +34,23 @@
   <!-- my self -->
 
   <section class="colored-section" id="profile">
-    <div class="container-fluid" id="inner-profile">
+    <div class="container-fluid">
       <div class="row">
         <div class="profile-left-side col-lg-6">
-          <!-- <img src="images\profile.png" alt="profile image"> -->
+          <img src="images\profile.png" alt="profile image">
         </div>
         <div class="profile-right-side col-lg-6">
-          <h1 class="">Yoni Romm</h1>
+          <h1>Yoni Romm</h1>
           <h6>Computer Science Student</h6>
           <hr>
           <h6 class="profile-title">Phone:</h6>
-          <p class="profile-descriptio">0522243622</p>
+          <p class="profile-description"><span>0522243622</span></p>
           <h6 class="profile-title">Email:</h6>
-          <p class="profile-description">Yonik12@gmail.com</p>
+          <p class="profile-description"><span>Yonik12@gmail.com</span></p>
           <h6 class="profile-title">Address:</h6>
-          <p class="profile-description">Maguri Haim Cohen 1/16 Netanya</p>
+          <p class="profile-description"><span>Maguri Haim Cohen 1/16 Netanya</span></p>
           <h6 class="profile-title">Date of birth:</h6>
-          <p class="profile-description">11/04/1998</p>
+          <p class="profile-description"><span>11/04/1998</span></p>
         </div>
       </div>
     </div>
@@ -69,7 +75,7 @@
   </section>
 
   <section class="white-section" id="experience-education">
-    <div class="container-fluid">
+    <div class="container-fluid" id="experience">
       <div class="experience">
         <span class="span-title">EXPERIENCE</span>
         <hr>
@@ -82,7 +88,7 @@
         <p>1 year in charge for planning and coordinating equipment for missions</p>
         <p>August 2016 - October 2020</p>
       </div>
-      <div class="education">
+      <div class="education" id="education">
         <hr>
         <span class="span-title">EDUCATION</span>
         <hr>
@@ -95,6 +101,9 @@
       </div>
     </div>
   </section>
+
+  <!-- -------------------------- skills section ----------------------------------- -->
+
   <section class="colored-section" id="skills">
     <div class="span-title">
       <span>SKILLS</span>
@@ -109,18 +118,22 @@
         <i class="social-icon fab fa-git"></i>
         <i class="social-icon fab fa-java"></i>
         <i class="social-icon fab fa-python"></i>
-        <p>HTML, JavaScript, CSS, React, npm, git, Java, P</p>
+        <p>HTML, JavaScript, CSS, React, npm, git, Java, Python</p>
       </div>
     </div>
   </section>
+
+  <!-- -------------------------- contact me section ----------------------------------- -->
+
   <section class="colored-section" id="contact-me">
     <div class="container-fluid">
       <div class="span-title">
-        <span>SKILLS</span>
+        <p><span>CONTACT ME</span></p>
+        <hr>
       </div>
       <div class="row">
         <div class="contact-left-side col-lg-6">
-          <div class="div-contact-handle">
+          <form class="div-contact-handle" action="/" method="post">
             <div class="row">
               <div class="col-lg-6">
                 <input type="text" class="form-control form-control-sm" placeholder="Name" name="Name" required autofocus>
@@ -138,23 +151,23 @@
             <div class="submit-button">
               <button class="btn btn-sm btn-primary btn-block" type="submit">Submit</button>
             </div>
-          </div>
+          </form>
         </div>
-        <div class="profile-right-side col-lg-6">
+        <div class="contact-right-side col-lg-6">
           <h1 class="">Yoni Romm</h1>
           <h6>Computer Science Student</h6>
-          <hr>
-          <h6 class="profile-title">Phone:</h6>
-          <p class="profile-descriptio">0522243622</p>
-          <h6 class="profile-title">Email:</h6>
-          <p class="profile-description">Yonik12@gmail.com</p>
+          <div class="profile-info-div">
+            <h6 class="profile-title">Phone:</h6>
+            <p class="profile-description">0522243622</p>
+            <h6 class="profile-title">Email:</h6>
+            <p class="profile-description">Yonik12@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
-
-
 
 
 

@@ -11,9 +11,11 @@ p {
   color: #8f8f8f;
 }
 
-.span-title{
+.span-title {
   letter-spacing: 0.2rem;
   font-size: 150%;
+  font-weight: bold;
+
 }
 
 /* Headings */
@@ -35,7 +37,6 @@ p {
 
 /* Sections */
 .colored-section {
-  background-color: #ff4c68;
   color: #fff;
 }
 
@@ -43,24 +44,27 @@ p {
   background-color: #fff;
 }
 
-
-
-
 /* --------------------title/navbar Section-------------------------- */
 #title {
-  background-color: #ccffdd;
-  color: #fff;
-  text-align: left;
+  background-color: white;
+  padding: 0;
+  z-index: 999;
+
 }
 
 #title .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 0;
 }
 
 /* Navigation Bar */
-.navbar {
-  /* padding: 0 0 4.5rem; */
-  text-align: center;
+#title nav {
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -68,17 +72,19 @@ p {
   font-size: 2.5rem;
   font-weight: bold;
 }
-
+.navbar-nav{
+  text-align: center;
+  margin: auto;
+}
 .nav-item {
-  padding: 0 18px;
+  padding: 0 10px;
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  color: #182153;
   font-family: "Montserrat-Light";
 }
-
-
 
 /* --------------------Profile Section-------------------------- */
 .row {
@@ -86,32 +92,39 @@ p {
 }
 
 #profile {
-  padding: 3% 25% 7%;
-  background-color: blue;
+  padding: 15% 20% 7%;
+  background-color: #151d4a;
+  background-image: url("/images/fabric-of-squares.png");
 }
 
-#inner-profile {
-  padding: 0;
-  background-color: black;
+#profile .container-fluid {
+  padding: 0 0;
+  background-color: #FCF8F7;
 }
 
-.profile-left-side {
-  background: url("/images/profile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 0 0 0 0;
+.profile-left-side img {
+  width: 100%;
+  height: 100%;
 }
 
 .profile-right-side {
   text-align: left;
-  /* border-left: thick solid #ff0000; */
   padding-left: 3%;
+  color: #182153;
 }
 
-.profile-title {}
+.profile-title {
+  margin-bottom: 0;
+}
 
-.profile-description {}
+.profile-description {
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-right-side h1 {
+  padding-top: 10%;
+}
 
 /* --------------------social Section-------------------------- */
 #social {
@@ -122,99 +135,151 @@ p {
   width: 50%;
   margin: auto;
   padding: 0;
-  background-color: red;
 }
 
 #social .container-fluid {
   padding: 0;
-  background-color: #ffddcc;
+  /* background-color: #ffddcc; */
+  background-color: #151d4a;
 }
 
-.icons-anchor-tag{
+.icons-anchor-tag {
   color: white;
 }
 
 /* --------------------About me Section-------------------------- */
 #about {
   position: relative;
+  text-align: center;
   background-color: #f5f5f5;
 }
 
-#about .container-fluid{
+#about .container-fluid {
   width: 70%;
-  text-align: left;
 }
-#about h3{
+
+#about h3 {
   color: #788fa5;
 }
 
 /* --------------------Experience Section-------------------------- */
-
-#experience-education{
+#experience-education {
   text-align: left;
 }
-#experience-education span{
+
+#experience-education span {
   letter-spacing: 0.2rem;
   font-size: 150%;
 }
-#experience-education h3{
+
+#experience-education h3 {
   padding: 1rem 0;
 }
-.education{
+
+.education {
   padding: 2rem 0;
 }
 
 /* --------------------Skills Section-------------------------- */
-
-#skills{
-  background-color: blue;
+#skills {
+  background-color: #151d4a;
+  background-image: url("/images/fabric-of-squares.png");
   padding: 0 0;
   text-align: center;
 }
-#skills .span-title{
-  background-color: green;
+
+#skills .span-title {
+  background-color: #182153;
   padding: 0.5rem 0;
 }
-#skills .container-fluid{
+
+#skills .container-fluid {
   padding-top: 1rem;
 }
-.social-icon{
+
+.social-icon {
   font-size: 1.5rem;
   margin: 20px 10px;
 }
 
 /* --------------------Contace me Section-------------------------- */
-
-#contact-me{
-  background-color: gray;
-}
-#contact-me .container-fluid{
-  padding: 1rem 1rem;
-}
-.div-contact-handle{
-  padding: 2rem 1rem;
+#contact-me {
+  background-color: #E7E4E3;
 }
 
-.contact-left-side{
+#contact-me .container-fluid {
+  padding: 1rem 0 0;
+}
+
+#contact-me .profile-info-div {
+  padding-top: 3%;
+}
+
+#contact-me .span-title {
+  padding: 0.5rem 0 0;
+}
+.span-title p {
+  padding: 0 0 0;
+  color: #182153;
+  font-size: 80%;
+  font-weight: bold;
+
+}
+
+.span-title hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid white;
+  margin: 0 0;
+  padding: 0;
+}
+
+.contact-left-side {
   text-align: center;
-  background-color: yellow;
+  border-right: 1px solid white;
+  padding: 2rem 3rem;
 }
-.contact-left-side .row{
-  padding: 0 0 1rem 0;
-}
-.contact-left-side .subject-input{
-  padding: 0 0 1rem 0;
-}
-.contact-left-side .message-textarea{
-  padding: 0 0 1rem 0;
-}
-.contact-left-side .submit-button{
+
+.contact-left-side .row {
   padding: 0 0 1rem 0;
 }
 
+.contact-left-side .subject-input {
+  padding: 0 0 1rem 0;
+}
 
+.contact-left-side .message-textarea {
+  padding: 0 0 1rem 0;
+}
 
+.contact-left-side .submit-button {
+  padding: 0 0 1rem 0;
+}
 
+.contact-right-side {
+  text-align: left;
+  padding-left: 3%;
+  color: #182153;
+}
+
+.contact-right-side h1 {
+  padding-top: 4%;
+}
+
+/* --------------------footer Section-------------------------- */
+#footer{
+  padding: 0;
+}
+.footer-div{
+  padding: 1% 20%;
+  text-align: left;
+  font-size: 0.5rem;
+}
+.footer-div p {
+  margin-bottom: 0;
+  color: #2F2E2E;
+}
 
 
 
@@ -222,6 +287,9 @@ p {
   #title {
     text-align: center;
   }
+  .navbar .navbar-nav {
+    text-align: center;
+    }
 
   .title-image {
     position: static;
