@@ -43,6 +43,20 @@ p {
   background-color: #fff;
 }
 
+
+
+
+/* --------------------title/navbar Section-------------------------- */
+#title {
+  background-color: #ccffdd;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Navigation Bar */
 .navbar {
   /* padding: 0 0 4.5rem; */
@@ -64,29 +78,7 @@ p {
   font-family: "Montserrat-Light";
 }
 
-/* Buttons */
-.download-button {
-  margin: 5% 3% 5% 0;
-}
 
-/* Title Section */
-#title {
-  background-color: #ccffdd;
-  color: #fff;
-  text-align: left;
-}
-
-#title .container-fluid {
-  padding: 3% 15% 7%;
-}
-
-/* Title Image */
-.title-image {
-  width: 60%;
-  transform: rotate(25deg);
-  position: absolute;
-  right: 30%;
-}
 
 /* --------------------Profile Section-------------------------- */
 .row {
@@ -176,84 +168,55 @@ p {
 
 #skills{
   background-color: blue;
-  /* padding: 0 0; */
+  padding: 0 0;
+  text-align: center;
+}
+#skills .span-title{
+  background-color: green;
+  padding: 0.5rem 0;
 }
 #skills .container-fluid{
+  padding-top: 1rem;
 }
-#skills hr{
-
-}
-
-
-
-/* Features Section */
-#features {
-  position: relative;
-  background-color: #f5f5f5;
-}
-
-.feature-title {
+.social-icon{
   font-size: 1.5rem;
-}
-
-.feature-box {
-  padding: 4.5%;
-}
-
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #ff4c68;
-}
-
-/* Testimonial Section */
-#testimonials {
-  background-color: #ef8172;
-}
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
-
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
-}
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-
-/* Pricing Section */
-#pricing {
-  padding: 100px;
-}
-
-.price-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.pricing-column {
-  padding: 3% 2%;
-}
-
-/* CTA Section */
-/* Footer Section */
-.social-icon {
   margin: 20px 10px;
 }
+
+/* --------------------Contace me Section-------------------------- */
+
+#contact-me{
+  background-color: gray;
+}
+#contact-me .container-fluid{
+  padding: 1rem 1rem;
+}
+.div-contact-handle{
+  padding: 2rem 1rem;
+}
+
+.contact-left-side{
+  text-align: center;
+  background-color: yellow;
+}
+.contact-left-side .row{
+  padding: 0 0 1rem 0;
+}
+.contact-left-side .subject-input{
+  padding: 0 0 1rem 0;
+}
+.contact-left-side .message-textarea{
+  padding: 0 0 1rem 0;
+}
+.contact-left-side .submit-button{
+  padding: 0 0 1rem 0;
+}
+
+
+
+
+
+
 
 @media (max-width: 1028px) {
   #title {
