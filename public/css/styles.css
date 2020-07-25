@@ -9,25 +9,14 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #8f8f8f;
+  margin: 0;
+  padding: 0 0;
 }
 
 .span-title {
   letter-spacing: 0.2rem;
-  font-size: 150%;
+  font-size: 1.5rem;
   font-weight: bold;
-
-}
-
-/* Headings */
-.big-heading {
-  font-family: "Montserrat-Black";
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
 }
 
 /* Containers */
@@ -49,7 +38,6 @@ p {
   background-color: white;
   padding: 0;
   z-index: 999;
-
 }
 
 #title .container-fluid {
@@ -59,6 +47,7 @@ p {
 /* Navigation Bar */
 #title nav {
   overflow: hidden;
+  font-family: "Ubuntu";
 }
 
 .sticky {
@@ -67,15 +56,11 @@ p {
   width: 100%;
 }
 
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.navbar-nav{
+.navbar-nav {
   text-align: center;
   margin: auto;
 }
+
 .nav-item {
   padding: 0 10px;
 }
@@ -115,10 +100,11 @@ p {
 
 .profile-title {
   margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 .profile-description {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -169,7 +155,6 @@ p {
 
 #experience-education span {
   letter-spacing: 0.2rem;
-  font-size: 150%;
 }
 
 #experience-education h3 {
@@ -188,9 +173,10 @@ p {
   text-align: center;
 }
 
-#skills .span-title {
+#skills .title-div {
   background-color: #182153;
   padding: 0.5rem 0;
+  color: #fff;
 }
 
 #skills .container-fluid {
@@ -208,25 +194,15 @@ p {
 }
 
 #contact-me .container-fluid {
-  padding: 1rem 0 0;
-}
-
-#contact-me .profile-info-div {
-  padding-top: 3%;
+  padding: 0 0 0;
 }
 
 #contact-me .span-title {
-  padding: 0.5rem 0 0;
-}
-.span-title p {
-  padding: 0 0 0;
+  padding: 1rem 0;
   color: #182153;
-  font-size: 80%;
-  font-weight: bold;
-
 }
 
-.span-title hr {
+#contact-me .title-div hr {
   display: block;
   height: 0;
   border: 0;
@@ -258,28 +234,33 @@ p {
 }
 
 .contact-right-side {
-  text-align: left;
-  padding-left: 3%;
   color: #182153;
+  padding-left: 3%;
+  padding-top: 2%;
+  text-align: left;
 }
 
-.contact-right-side h1 {
-  padding-top: 4%;
+#contact-me .profile-info-div {
+  padding-top: 3%;
 }
 
 /* --------------------footer Section-------------------------- */
-#footer{
+#footer {
   padding: 0;
 }
-.footer-div{
+
+.footer-div {
   padding: 1% 20%;
   text-align: left;
   font-size: 0.5rem;
 }
+
 .footer-div p {
   margin-bottom: 0;
   color: #2F2E2E;
 }
+
+/* --------------------media Section-------------------------- */
 
 
 /* computer- laptop-1200 tablet-800 phone- */
@@ -287,14 +268,22 @@ p {
   body, div, h1, h2, h3, h4, h5, h6, p {
     font-size: 130%;
   }
-  span{
+
+  span {
     font-size: 150%;
   }
+
   .profile-right-side {
     padding-left: 10%;
     font-size: 5rem;
   }
-  .email-input{
+
+  .email-input {
     padding-top: 1rem;
+  }
+
+  .contact-right-side {
+    padding-top: 0;
+    padding-left: 13%;
   }
 }
