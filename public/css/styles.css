@@ -282,17 +282,19 @@ p {
 }
 
 
-
-@media (max-width: 1028px) {
-  #title {
-    text-align: center;
+/* computer- laptop-1200 tablet-800 phone- */
+@media screen and (max-width: 768px) {
+  body, div, h1, h2, h3, h4, h5, h6, p {
+    font-size: 130%;
   }
-  .navbar .navbar-nav {
-    text-align: center;
-    }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
+  span{
+    font-size: 150%;
+  }
+  .profile-right-side {
+    padding-left: 10%;
+    font-size: 5rem;
+  }
+  .email-input{
+    padding-top: 1rem;
   }
 }
