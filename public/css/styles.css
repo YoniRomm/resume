@@ -292,6 +292,10 @@ p {
 
 @media screen and (max-width: 479px) {
   /* start of phone styles */
+  #profile {
+    padding: 22% 10% 7%;
+  }
+
   .profile-right-side {
     padding-left: 10%;
   }
