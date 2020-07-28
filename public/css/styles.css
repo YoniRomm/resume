@@ -17,6 +17,7 @@ p {
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
   font-weight: bold;
+  color: #182153;
 }
 
 /* Containers */
@@ -183,6 +184,10 @@ p {
   padding-top: 1rem;
 }
 
+#skills .span-title{
+  color: white;
+}
+
 .social-icon {
   font-size: 1.5rem;
   margin: 20px 10px;
@@ -262,22 +267,14 @@ p {
 
 /* --------------------media Section-------------------------- */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 769px) {
 /* start of large tablet styles */
 
 }
 
 /* computer- laptop-1200 tablet-800 phone- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) and (min-width: 480px) {
   /* start of medium tablet styles */
-  body, div, h1, h2, h3, h4, h5, h6, p {
-    font-size: 130%;
-  }
-
-  span {
-    font-size: 150%;
-  }
-
   .profile-right-side {
     padding-left: 10%;
     font-size: 5rem;
@@ -289,23 +286,19 @@ p {
 
   .contact-right-side {
     padding-top: 0;
-    padding-left: 13%;
+    padding-left: 7%;
   }
 }
 
 @media screen and (max-width: 479px) {
   /* start of phone styles */
-  body, div, h1, h2, h3, h4, h5, h6, p {
-    font-size: 130%;
-  }
-
-  span {
-    font-size: 150%;
-  }
-
   .profile-right-side {
     padding-left: 10%;
-    font-size: 5rem;
+  }
+
+  #about .container-fluid{
+    text-align: center;
+    padding: 7% 1%;
   }
 
   .email-input {

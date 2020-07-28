@@ -1,4 +1,9 @@
 //jshint esversion:6
+
+// TODO:
+// contact me form doesnt send email, need to make the function that sends email
+
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
