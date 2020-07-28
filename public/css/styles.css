@@ -262,9 +262,39 @@ p {
 
 /* --------------------media Section-------------------------- */
 
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+
+}
 
 /* computer- laptop-1200 tablet-800 phone- */
 @media screen and (max-width: 768px) {
+  /* start of medium tablet styles */
+  body, div, h1, h2, h3, h4, h5, h6, p {
+    font-size: 130%;
+  }
+
+  span {
+    font-size: 150%;
+  }
+
+  .profile-right-side {
+    padding-left: 10%;
+    font-size: 5rem;
+  }
+
+  .email-input {
+    padding-top: 1rem;
+  }
+
+  .contact-right-side {
+    padding-top: 0;
+    padding-left: 13%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
   body, div, h1, h2, h3, h4, h5, h6, p {
     font-size: 130%;
   }

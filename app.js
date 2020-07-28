@@ -15,7 +15,7 @@ app.use(express.static("public"));
 // app.use(express.json());
 
 app.get("/", function(req, res) {
-  res.sendFile( __dirname + "/views/index.html");
+  res.sendFile( __dirname + "/index.html");
 });
 
 app.post("/", (req, res) => {
