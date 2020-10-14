@@ -269,6 +269,9 @@ p {
 
 @media screen and (max-width: 991px) and (min-width: 769px) {
 /* start of large tablet styles */
+.email-input {
+  padding-top: 1rem;
+}
 
 }
 
